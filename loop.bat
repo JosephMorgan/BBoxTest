@@ -9,7 +9,7 @@
 :AppiumTest  
 @set /a i+=1
 @echo ------------------------------------AppiumTest-----第%i%次----------------------- >>E:\0log\appium执行%time1%.txt
-echo ------------------------------------AppiumTest-----第%i%次-----------------------
+echo ------------------------------------AppiumTest-----第%i%次------------------------
 @net time \\127.0.0.1
 @adb connect 192.168.28.203
 @call mvn test >>E:\0log\appium执行%time1%.txt
