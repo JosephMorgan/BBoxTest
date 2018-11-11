@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="基础设置"
+           tests="22"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="62.613">
+  <properties />
+  
+  
+            <testcase name="testSystemUpdate" time="1.054" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testBlutoothSetting" time="1.754" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testTodayStatistics" time="1.558" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testDeviceManager" time="1.563" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testCommonSetting" time="1.675" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testDeviceManager" time="1.572" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testDeviceManager" time="1.558" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testAboutDevice" time="1.614" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testResetSettings" time="6.466" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testOpenDoor" time="4.554" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testTimeSetting" time="1.771" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testAlwaysOpenDoor" time="1.585" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testNetworkSetting" time="1.550" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testStorageUsage" time="1.640" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testRebootDevice" time="4.635" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testExportFile" time="0.995" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testMoreComparison" time="1.550" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testFaceRecognizeSetting" time="1.565" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testAdvanced" time="13.888" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testRestoreFactorySettings" time="4.017" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testPersonRules" time="1.574" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+                <testcase name="testDeviceRules" time="4.475" classname="com.beeboxes.setting.testcase.TestSettingsActivity" />
+      
+</testsuite>

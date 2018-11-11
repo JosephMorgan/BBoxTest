@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="基础设置"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.000">
+  <properties />
+  
+  
+            <testcase name="test1" time="0.000" classname="com.beeboxes.settings.page.PageSettingsActivity" />
+      
+</testsuite>

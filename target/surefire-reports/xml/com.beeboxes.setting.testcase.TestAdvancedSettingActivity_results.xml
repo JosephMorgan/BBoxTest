@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="高级设置"
+           tests="13"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="29.993">
+  <properties />
+  
+  
+            <testcase name="testStandbySetting" time="1.513" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testRecognitionRecordSetting" time="1.489" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testAdvanced" time="12.158" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testCameraEffectSetting" time="1.619" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testCameraEffectSetting" time="1.603" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testTipsCustomSetting" time="1.466" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testCameraEffectSetting" time="1.135" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testRecognitionRecordSetting" time="1.535" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testRecognitionRecordSetting" time="1.457" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testTipsCustomSetting" time="1.487" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testStandbySetting" time="1.529" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testTipsCustomSetting" time="1.502" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testStandbySetting" time="1.500" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+      
+</testsuite>

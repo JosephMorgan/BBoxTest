@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="单机版的人员管理"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.449">
+  <properties />
+  
+  
+            <testcase name="testSingleAddPeople" time="1.449" classname="com.beeboxes.datatool.testcase.TestSingleAddPeople" />
+      
+</testsuite>

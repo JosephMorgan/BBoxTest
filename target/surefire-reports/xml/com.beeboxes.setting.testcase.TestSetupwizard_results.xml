@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="单机版默认的激活流程"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="8.160">
+  <properties />
+  
+  
+            <testcase name="testStandAloneDefaultSetupwizard" time="8.160" classname="com.beeboxes.setting.testcase.TestSetupwizard" />
+      
+</testsuite>
