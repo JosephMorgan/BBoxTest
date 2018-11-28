@@ -5,13 +5,14 @@ import java.util.ArrayList;
 
 import com.csvreader.CsvReader;
 
+/** 读取csv文件  */
 public class ReadCSV {
 	public  static ArrayList<String[]> readCSVFile(String filePath) {
 		ArrayList<String[]> csvList = null;
 		try {
 			csvList = new ArrayList<String[]>();//保存数据
 			CsvReader reader = new CsvReader(filePath,',', Charset.forName("UTF-8"));//编码设置
-			//reader.readHeaders();//跳过表头，如果需要的话
+			reader.readHeaders();//跳过表头，如果需要的话
 			
 			//逐行读,除表头的数据
 			while (reader.readRecord()) {
@@ -30,8 +31,7 @@ public class ReadCSV {
 //			//只读取某一列,比如第一列
 //			for (int row = 0; row < csvList.size(); row++) {
 //				String cell = csvList.get(row)[0];
-//				//System.out.println(cell);
-//				
+//				//System.out.println(cell);			
 //			}
 		} catch (Exception ex) {
 			System.out.println(ex);
@@ -40,12 +40,12 @@ public class ReadCSV {
 	}
 	
 	public static void main(String[] args) {
-		String filePath = "C:/Users/Administrator/Desktop/租户信息.csv";
+		String filePath = "./config/SingleAddPeople.csv";
 
 		ArrayList<String[]> csvList = readCSVFile(filePath);
 		for (int row = 0; row < csvList.size(); row++) {
-			String cell = csvList.get(row)[0];
-			System.out.println(cell);
+			System.out.println(csvList.get(row)[0]);
+			System.out.println(csvList.get(row)[1]);
 			
 		}
 	}

@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
 import com.beeboxes.base.InitializeAppium;
+import com.beeboxes.base.ReadXml;
+import com.beeboxes.base.Screenshot;
 import com.beeboxes.base.SwipeScreen;
 import com.beeboxes.setting.page.PageSettingsActivity;
 
@@ -24,17 +26,13 @@ public class TestSettingsActivity {
 
 	@BeforeClass
 	public void beforeClass() {
+		System.out.println(ReadXml.getElementById("基础设置", "高级"));
 		driver = new InitializeAppium().initializeAppium(driver);
 
 	}
 
 	@AfterClass
 	public void afterClass() {
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 		driver.quit();
 	}
 
@@ -43,6 +41,7 @@ public class TestSettingsActivity {
 		Reporter.log("步骤1：点高级按钮");		
 		new PageSettingsActivity(driver).clickAdvanced();
 		//Assert.assertTrue(driver.findElementByName("高级设置").isDisplayed());//有“高级设置”标题
+		Screenshot.snapshot(driver, "高级设置列表.png");
 		Reporter.log("步骤2：返回基础设置列表");
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));//返回键
 	}
@@ -113,7 +112,7 @@ public class TestSettingsActivity {
 	
 	@Test(description="点设备规则")
 	public void testDeviceRules() {
-		new SwipeScreen().swipeScreen(driver, "up",230);//向上滑动屏幕230
+		SwipeScreen.swipeScreen(driver, "up",230);//向上滑动屏幕230
 		Reporter.log("步骤1：点设备规则");
 		new PageSettingsActivity(driver).clickDeviceRules();
 		Assert.assertTrue(driver.findElementByName("设备规则").isDisplayed());//有“设备规则”标签
@@ -168,7 +167,7 @@ public class TestSettingsActivity {
 	
 	@Test(description="点还原全部设置")
 	public void testResetSettings() {
-		new SwipeScreen().swipeScreen(driver, "up",230);//向上滑动屏幕230
+		SwipeScreen.swipeScreen(driver, "up",230);//向上滑动屏幕230
 		Reporter.log("步骤1：点还原全部设置");
 		new PageSettingsActivity(driver).clickResetSettings();
 		Assert.assertTrue(driver.findElementById("com.opnext.setting:id/dialog_hint").isDisplayed());//有“还原全部设置”的提示语

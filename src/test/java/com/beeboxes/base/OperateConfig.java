@@ -20,12 +20,12 @@ import java.util.Properties;
 /** 读取配置文件 */
 public class OperateConfig {// 工具类
 	/** 属性1-文件存储路径 */
-	private String filePath;
+	private String filePath = "../config/test.properties";
 	/** 属性2-Properties类，是Map的子类,用于读取和存储key和value */
 	private Properties prop;
 	/** 构造方法 */
-	public OperateConfig(String filePath) {
-		this.filePath = filePath;
+	public OperateConfig() {
+		//this.filePath = filePath;
 		this.prop = readProperties();// 下面写的方法
 	}
 	
@@ -73,7 +73,8 @@ public class OperateConfig {// 工具类
 
 	/** 测试 */
 	public static void main(String agrs[]) {
-		OperateConfig firstTest = new OperateConfig("./config/test.properties");
+		//OperateConfig firstTest = new OperateConfig("./config/test.properties");
+		OperateConfig firstTest = new OperateConfig();
 		firstTest.setProp("设备名称", "邓斌的设备");
 		firstTest.setProp("服务器的地址", "172.16.20.211");
 		firstTest.setProp("激活码", "123456789012");

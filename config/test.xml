@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <activity name="基础设置">
+        <element name="高级">
+            <id><![CDATA[com.opnext.setting:id/actionbar_advanced]]></id>
+			<name>高级</name>
+        </element>
+        <element name="关于设备">
+            <id><![CDATA[com.opnext.setting:id/tv_about_device]]></id>
+        </element>
+    </activity>
+	    <activity name="高级设置">
+        <element name="摄像效果设置">
+            <id><![CDATA[com.opnext.setting:id/actionbar_advanced]]></id>
+        </element>
+        <element name="识别记录设置">
+            <id><![CDATA[com.opnext.setting:id/tv_about_device]]></id>
+        </element>
+    </activity>
+</root>

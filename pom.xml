@@ -26,6 +26,18 @@
 		</dependency>
 
 		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<version>1.1.6</version>
+		</dependency>
+
+		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
 			<version>LATEST</version>
@@ -108,6 +120,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
+					    <!--可以添加多个xml文件-->
 						<suiteXmlFile>xmlfile/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<properties>

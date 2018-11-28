@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 108.542 sec - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.178 sec <<< FAILURE! - in TestSuite
+testSearchPeopleByCompleteName(com.beeboxes.datatool.testcase.TestSearchPeople)  Time elapsed: 7.478 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'KAI-PC', ip: '192.168.30.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.opnext.datatool.view.ac..., appPackage: com.opnext.datatool, browserName: Android, databaseEnabled: false, desired: {appActivity: com.opnext.datatool.view.ac..., appPackage: com.opnext.datatool, deviceName: h03v57c2k, noReset: true, noSign: true, platformName: Android, platformVersion: 7.0, resetKeyboard: true, unicodeKeyboard: true}, deviceName: 192.168.28.212:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, noSign: true, platform: LINUX, platformName: Android, platformVersion: 7.0, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 0e3a4f72-977c-460a-ab32-edca2cbe9473
+	at com.beeboxes.datatool.testcase.TestSearchPeople.testSearchPeopleByCompleteName(TestSearchPeople.java:39)
+

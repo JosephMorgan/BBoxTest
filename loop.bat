@@ -11,7 +11,8 @@
 @echo ------------------------------------AppiumTest-----第%i%次----------------------- >>E:\0log\appium执行%time1%.txt
 echo ------------------------------------AppiumTest-----第%i%次------------------------
 @net time \\127.0.0.1
-@adb connect 192.168.28.203
+@adb connect 192.168.28.74
+@adb shell ime set io.appium.android.ime/.UnicodeIME
 @call mvn test >>E:\0log\appium执行%time1%.txt
 @timeout %TIME%
 

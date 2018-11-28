@@ -14,7 +14,7 @@ import io.appium.java_client.touch.offset.PointOption;
 public class SwipeScreen {
 
     
-	public void swipeScreen(AndroidDriver<?> driver,String direction,int slipSize) {
+	public static void swipeScreen(AndroidDriver<?> driver,String direction,int slipSize) {
 	    int width = driver.manage().window().getSize().width;
 	    int height = driver.manage().window().getSize().height;
 	    

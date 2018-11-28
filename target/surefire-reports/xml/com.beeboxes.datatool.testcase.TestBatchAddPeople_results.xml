@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="基础设置"
-           tests="24"
+<testsuite name="单机版的人员管理"
+           tests="12"
            failures="1"
            errors="0"
-           skipped="23"
-           time="0.003">
+           skipped="11"
+           time="0.000">
   <properties />
-            <testcase name="beforeClass" time="0.000" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="beforeClass" time="0.000" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
                 <failure type="org.openqa.selenium.WebDriverException"
                   message="Connection refused: connect
 Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
@@ -18,7 +18,7 @@ Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.1
 System info: host: 'KAI-PC', ip: '192.168.30.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_31'
 Driver info: driver.version: AndroidDriver
   io.appium.java_client.remote.AppiumCommandExecutor.lambda$2(AppiumCommandExecutor.java:243)
-  io.appium.java_client.remote.AppiumCommandExecutor$$Lambda$169/947553027.get(Unknown Source)
+  io.appium.java_client.remote.AppiumCommandExecutor$$Lambda$173/417301556.get(Unknown Source)
   java.util.Optional.orElseGet(Optional.java:267)
   io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:242)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
@@ -31,8 +31,8 @@ Driver info: driver.version: AndroidDriver
   io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
   io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
   io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-  com.beeboxes.base.InitializeAppium.initializeAppium(InitializeAppium.java:52)
-  com.beeboxes.setting.testcase.TestSettingsActivity.beforeClass(TestSettingsActivity.java:30)
+  com.beeboxes.base.InitializeAppium.initializeAppium(InitializeAppium.java:51)
+  com.beeboxes.datatool.testcase.TestBatchAddPeople.beforeClass(TestBatchAddPeople.java:31)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,8 +107,8 @@ Caused by: java.net.ConnectException: Connection refused: connect
   io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
   io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
   io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-  com.beeboxes.base.InitializeAppium.initializeAppium(InitializeAppium.java:52)
-  com.beeboxes.setting.testcase.TestSettingsActivity.beforeClass(TestSettingsActivity.java:30)
+  com.beeboxes.base.InitializeAppium.initializeAppium(InitializeAppium.java:51)
+  com.beeboxes.datatool.testcase.TestBatchAddPeople.beforeClass(TestBatchAddPeople.java:31)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,73 +141,37 @@ Caused by: java.net.ConnectException: Connection refused: connect
 
           </testcase>
   
-            <testcase name="afterClass" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="afterClass" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testRebootDevice" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testPersonRules" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testSystemUpdate" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testExportFile" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testDeviceManager" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testAboutDevice" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testTodayStatistics" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testAlwaysOpenDoor" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testAdvanced" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
-            <testcase name="testBlutoothSetting" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testDeviceRules" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testDeviceManager" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testFaceRecognizeSetting" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testResetSettings" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testMoreComparison" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testStorageUsage" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testTimeSetting" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testNetworkSetting" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testRestoreFactorySettings" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testCommonSetting" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testDeviceManager" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
-          <skipped />
-    </testcase>
-            <testcase name="testOpenDoor" time="0.0" classname="com.beeboxes.setting.testcase.TestSettingsActivity">
+            <testcase name="testBatchAddPeople" time="0.0" classname="com.beeboxes.datatool.testcase.TestBatchAddPeople">
           <skipped />
     </testcase>
   
