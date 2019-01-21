@@ -1,14 +1,11 @@
 package com.beeboxes.datatool.testcase;
 
-import io.appium.java_client.android.AndroidDriver;
-
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.beeboxes.base.InitializeAppium;
-import com.beeboxes.base.Wait;
 import com.beeboxes.datatool.page.PagePeopleManagementActivity;
+import com.beeboxes.util.CommandExecutor;
+import com.beeboxes.util.TestBaseDataTool;
 
 /**
  * Description: DataTool应用--搜索人员的用例
@@ -16,25 +13,18 @@ import com.beeboxes.datatool.page.PagePeopleManagementActivity;
  * @date 2018年11月26日
  * @time 下午1:07:29
  */
-public class TestSearchPeople {
-	public AndroidDriver<?> driver;
-	
-	@BeforeClass
-	public void beforeClass() {
-		driver = new InitializeAppium().initializeAppium(driver);
-	}
-
-	@AfterClass
-	public void afterClass() {
-		Wait.sleep(5000);
-		driver.quit();
-	}
+public class TestSearchPeople extends TestBaseDataTool {
 	
 	@Test(description="通过姓名精确搜索人员")
 	public void testSearchPeopleByCompleteName() {
+		CommandExecutor.executeCommand("adb shell ime set io.appium.android.ime/.UnicodeIME");
+		String name = "常客test1";
 		PagePeopleManagementActivity peopleManagementPage = new PagePeopleManagementActivity(driver);
+		Reporter.log("步骤1：点人员搜索按钮");
 		peopleManagementPage.clickSearchPeopleBtn();
-		peopleManagementPage.searchPeople("小云45001");
+		Reporter.log("步骤2：输入完整的人员姓名");
+		peopleManagementPage.searchPeople(name);
+		Reporter.log("步骤3：点人员搜索按钮");
 		peopleManagementPage.clickSearchPeopleBtn();
 	}
 }

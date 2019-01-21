@@ -69,13 +69,13 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>2.53.0</version>
+			<version>3.3.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-server</artifactId>
-			<version>2.53.0</version>
+			<version>3.3.1</version>
 		</dependency>
 
 		<dependency>
@@ -121,7 +121,9 @@
 				<configuration>
 					<suiteXmlFiles>
 					    <!--可以添加多个xml文件-->
-						<suiteXmlFile>xmlfile/testng.xml</suiteXmlFile>
+						<suiteXmlFile>xmlfile/testngSetupWizard.xml</suiteXmlFile>
+						<suiteXmlFile>xmlfile/testngSetting.xml</suiteXmlFile>
+						<suiteXmlFile>xmlfile/testngDataTool.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<properties>
 						<property>

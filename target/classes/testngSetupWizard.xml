@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="蜂盒科技终端自动化测试-BboxSetupWizard应用">
+<!-- 	<test name="单机版默认激活流程" preserve-order="true">
+		<classes>
+			<class name="com.beeboxes.setupwizard.testcase.TestSetupwizard">
+				<methods>
+					<include name="testStandAloneDefaultSetupwizard" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	<test name="网络版默认激活流程" preserve-order="true">
+		<classes>
+			<class name="com.beeboxes.setupwizard.testcase.TestSetupwizard">
+				<methods>
+					<include name="testNetworkDefaultSetupwizard" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.beeboxes.util.DotTestListener" />
+	</listeners>
+</suite>

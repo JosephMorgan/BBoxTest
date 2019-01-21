@@ -15,13 +15,14 @@
   <h2>Test Results Report</h2>
   <p>
     <a href="overview.html" target="main">Overview</a>
+        &#183; <a href="output.html" target="main">Log Output</a>
           </p>
 </div>
 <table id="suites">
     <thead>
     <tr>
       <th class="header suite" onclick="toggleElement('tests-1', 'table-row-group'); toggle('toggle-1')">
-        <span id="toggle-1" class="toggle">&#x25bc;</span>蜂盒科技终端自动化测试-DataTool应用
+        <span id="toggle-1" class="toggle">&#x25bc;</span>蜂盒科技终端自动化测试-Settings应用
       </th>
     </tr>
   </thead>
@@ -29,8 +30,54 @@
         
                 <tr>
       <td class="test">
-                <span class="failureIndicator" title="Some tests failed.">&#x2718;</span>
-                <a href="suite1_test1_results.html" target="main">单机版的人员管理</a>
+                            <span class="successIndicator" title="All tests passed.">&#x2714;</span>
+                          <a href="suite1_test1_results.html" target="main">基础设置列表</a>
+      </td>
+    </tr>
+        
+                <tr>
+      <td class="test">
+                            <span class="successIndicator" title="All tests passed.">&#x2714;</span>
+                          <a href="suite1_test2_results.html" target="main">高级设置列表</a>
+      </td>
+    </tr>
+        
+                <tr>
+      <td class="test">
+                            <span class="successIndicator" title="All tests passed.">&#x2714;</span>
+                          <a href="suite1_test3_results.html" target="main">关于设备</a>
+      </td>
+    </tr>
+          </tbody>
+    <thead>
+    <tr>
+      <th class="header suite" onclick="toggleElement('tests-2', 'table-row-group'); toggle('toggle-2')">
+        <span id="toggle-2" class="toggle">&#x25bc;</span>蜂盒科技终端自动化测试-DataTool应用 
+      </th>
+    </tr>
+  </thead>
+  <tbody id="tests-2" class="tests">
+        
+                <tr>
+      <td class="test">
+                            <span class="successIndicator" title="All tests passed.">&#x2714;</span>
+                          <a href="suite2_test1_results.html" target="main">人员管理搜索人员</a>
+      </td>
+    </tr>
+          </tbody>
+    <thead>
+    <tr>
+      <th class="header suite" onclick="toggleElement('tests-3', 'table-row-group'); toggle('toggle-3')">
+        <span id="toggle-3" class="toggle">&#x25bc;</span>蜂盒科技终端自动化测试-BboxSetupWizard应用
+      </th>
+    </tr>
+  </thead>
+  <tbody id="tests-3" class="tests">
+        
+                <tr>
+      <td class="test">
+                            <span class="successIndicator" title="All tests passed.">&#x2714;</span>
+                          <a href="suite3_test1_results.html" target="main">网络版默认激活流程</a>
       </td>
     </tr>
           </tbody>

@@ -3,238 +3,24 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - 高级设置</title>
+  <title>Test Results Report - 高级设置列表</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>高级设置</h1>
+<h1>高级设置列表</h1>
 <p>
-  Test duration: 0.002s
+  Test duration: 25.380s
 </p>
 
-  <table class="resultsTable configTable">
-    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
-              <tr class="group">
-        <td colspan="3">com.beeboxes.setting.testcase.TestAdvancedSettingActivity</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  beforeClass
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: It is impossible to create a new session because &apos;createSession&apos; which takes HttpClient, InputStream and long was not found or it is not accessible<br/>
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;<br/>
-System info: host: &apos;KAI-PC&apos;, ip: &apos;192.168.30.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;<br/>
-Driver info: driver.version: AndroidDriver</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)<br />
-              io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)<br />
-              io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
-              io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)<br />
-              io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-              io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)<br />
-              io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)<br />
-              io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)<br />
-              io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)<br />
-              io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)<br />
-              com.beeboxes.base.InitializeAppium.initializeAppium(InitializeAppium.java:52)<br />
-              com.beeboxes.setting.testcase.TestAdvancedSettingActivity.beforeClass(TestAdvancedSettingActivity.java:27)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:483)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)<br />
-              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
-              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-              org.testng.TestRunner.run(TestRunner.java:632)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
-              org.testng.TestNG.run(TestNG.java:1064)<br />
-              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br />
-              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
-              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br />
-              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.lang.reflect.InvocationTargetException</a><br />
-        <div class="stackTrace" id="exception-1">
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:483)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)<br />
-                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)<br />
-                      io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)<br />
-                      io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)<br />
-                      io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)<br />
-                      com.beeboxes.base.InitializeAppium.initializeAppium(InitializeAppium.java:52)<br />
-                      com.beeboxes.setting.testcase.TestAdvancedSettingActivity.beforeClass(TestAdvancedSettingActivity.java:27)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:483)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
-                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-                      org.testng.TestRunner.run(TestRunner.java:632)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
-                      org.testng.TestNG.run(TestNG.java:1064)<br />
-                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br />
-                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
-                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br />
-                      org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br />
-                      org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br />
-                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br />
-                  </div>
-              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Command failed: E:\android-sdk-windows\platform-tools\adb.exe -s 192.168.28.203:5555 shell &quot;ps &apos;uiautomator&apos;&quot;<br/>
-) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 8.09 seconds<br/>
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;<br/>
-System info: host: &apos;KAI-PC&apos;, ip: &apos;192.168.30.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;<br/>
-Driver info: driver.version: AndroidDriver</a><br />
-        <div class="stackTrace" id="exception-2">
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-                      java.lang.reflect.Constructor.newInstance(Constructor.java:408)<br />
-                      org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
-                      org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
-                      org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)<br />
-                      org.openqa.selenium.remote.JsonWireProtocolResponse$$Lambda$172/2035616217.apply(Unknown Source)<br />
-                      org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)<br />
-                      org.openqa.selenium.remote.JsonWireProtocolResponse$$Lambda$174/1363793720.apply(Unknown Source)<br />
-                      org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)<br />
-                      org.openqa.selenium.remote.ProtocolHandshake$$Lambda$181/889891977.apply(Unknown Source)<br />
-                      java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)<br />
-                      java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)<br />
-                      java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)<br />
-                      java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:529)<br />
-                      java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:516)<br />
-                      java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502)<br />
-                      java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)<br />
-                      java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)<br />
-                      java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)<br />
-                      org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:483)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)<br />
-                      io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)<br />
-                      io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />
-                      io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)<br />
-                      io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)<br />
-                      io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)<br />
-                      io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)<br />
-                      io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:93)<br />
-                      com.beeboxes.base.InitializeAppium.initializeAppium(InitializeAppium.java:52)<br />
-                      com.beeboxes.setting.testcase.TestAdvancedSettingActivity.beforeClass(TestAdvancedSettingActivity.java:27)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-                      java.lang.reflect.Method.invoke(Method.java:483)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)<br />
-                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
-                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:782)<br />
-                      org.testng.TestRunner.run(TestRunner.java:632)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:366)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:268)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
-                      org.testng.TestNG.run(TestNG.java:1064)<br />
-                      org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)<br />
-                      org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
-                      org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)<br />
-                      org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)<br />
-                      org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)<br />
-                      org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)<br />
-                  </div>
-          </div>
-      </td>
-</tr>
-    
-          <tr><td colspan="3">&nbsp;</td></tr>
-      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
-                    <tr>
-          <td colspan="3" class="group">com.beeboxes.setting.testcase.TestAdvancedSettingActivity</td>
-        </tr>
-                
-<tr>
-  <td class="method">
-                  afterClass
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
-    
-        
-
-      </td>
-</tr>
-            </table>
 
 
 
-  <table class="resultsTable" width="100%">
-    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.beeboxes.setting.testcase.TestAdvancedSettingActivity</td>
       </tr>
@@ -244,12 +30,15 @@ Driver info: driver.version: AndroidDriver</a><br />
                   <span class="description" title="点高级按钮">testAdvanced</span>
       </td>
   <td class="duration">
-    0.000s
+    2.626s
   </td>
   <td class="result">
-                               
-    
         
+    
+            <div class="testOutput">
+                        步骤1：点高级按钮<br />
+                  </div>
+    
 
       </td>
 </tr>
@@ -258,40 +47,16 @@ Driver info: driver.version: AndroidDriver</a><br />
                   <span class="description" title="摄像效果设置">testCameraEffectSetting</span>
       </td>
   <td class="duration">
-    0.000s
+    1.455s
   </td>
   <td class="result">
-                               
-    
         
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="摄像效果设置">testCameraEffectSetting</span>
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
     
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="摄像效果设置">testCameraEffectSetting</span>
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
+            <div class="testOutput">
+                        步骤1：点摄像效果设置<br />
+                                步骤2：返回高级设置列表<br />
+                  </div>
     
-        
 
       </td>
 </tr>
@@ -300,82 +65,16 @@ Driver info: driver.version: AndroidDriver</a><br />
                   <span class="description" title="识别记录设置">testRecognitionRecordSetting</span>
       </td>
   <td class="duration">
-    0.000s
+    1.807s
   </td>
   <td class="result">
-                               
-    
         
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="识别记录设置">testRecognitionRecordSetting</span>
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
     
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="识别记录设置">testRecognitionRecordSetting</span>
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
+            <div class="testOutput">
+                        步骤1：点识别记录设置<br />
+                                步骤2：返回高级设置列表<br />
+                  </div>
     
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="待机页面设置">testStandbySetting</span>
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="待机页面设置">testStandbySetting</span>
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="待机页面设置">testStandbySetting</span>
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
-    
-        
 
       </td>
 </tr>
@@ -384,45 +83,38 @@ Driver info: driver.version: AndroidDriver</a><br />
                   <span class="description" title="提示信息自定义设置">testTipsCustomSetting</span>
       </td>
   <td class="duration">
-    0.001s
+    1.715s
   </td>
   <td class="result">
-                               
-    
         
+    
+            <div class="testOutput">
+                        步骤1：点提示信息自定义设置<br />
+                                步骤2：返回高级设置列表<br />
+                  </div>
+    
 
       </td>
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="提示信息自定义设置">testTipsCustomSetting</span>
+                  <span class="description" title="待机页面设置">testStandbySetting</span>
       </td>
   <td class="duration">
-    0.000s
+    1.796s
   </td>
   <td class="result">
-                               
-    
         
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="提示信息自定义设置">testTipsCustomSetting</span>
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
     
-        
+            <div class="testOutput">
+                        步骤1：点待机页面设置<br />
+                                步骤2：返回高级设置列表<br />
+                  </div>
+    
 
       </td>
 </tr>
       </table>
-
   
 </body>
 </html>

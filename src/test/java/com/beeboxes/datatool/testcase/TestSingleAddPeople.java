@@ -2,38 +2,22 @@ package com.beeboxes.datatool.testcase;
 
 import java.util.ArrayList;
 
-import io.appium.java_client.android.AndroidDriver;
-
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.beeboxes.base.InitializeAppium;
-import com.beeboxes.base.OperateConfig;
-import com.beeboxes.base.ReadCSV;
-import com.beeboxes.base.Wait;
 import com.beeboxes.datatool.page.PagePeopleManagementActivity;
+import com.beeboxes.util.OperateConfig;
+import com.beeboxes.util.ReadCSV;
+import com.beeboxes.util.TestBaseDataTool;
+import com.beeboxes.util.Wait;
 
 /**
  * Description: DataTool应用--单机版单个添加人员的用例
  * @author dengbin
  * @date 2018年11月06日
  */
-public class TestSingleAddPeople {
-	public AndroidDriver<?> driver;
-
-	@BeforeClass
-	public void beforeClass() {
-		driver = new InitializeAppium().initializeAppium(driver);
-	}
-
-	@AfterClass
-	public void afterClass() {
-		Wait.sleep(5000);
-		driver.quit();
-	}
+public class TestSingleAddPeople extends TestBaseDataTool {
 	
 	@Test(description="单机版的单个添加人员",dataProvider="dataSingleAddPeople")
 	public void testSingleAddPeople(String personId,String personName) {

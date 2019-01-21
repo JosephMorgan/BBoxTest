@@ -1,57 +1,39 @@
 package com.beeboxes.setting.testcase;
 
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterClass;
 
-import com.beeboxes.base.InitializeAppium;
-import com.beeboxes.base.ReadXml;
-import com.beeboxes.base.Screenshot;
-import com.beeboxes.base.SwipeScreen;
 import com.beeboxes.setting.page.PageSettingsActivity;
+import com.beeboxes.util.ReadXml;
+import com.beeboxes.util.SwipeScreen;
+import com.beeboxes.util.TestBaseSetting;
+import com.beeboxes.util.Wait;
 
 /**
  * Description: Setting应用的基础设置列表的用例
  * @author dengbin
  * @date 2018年10月26日
  */
-public class TestSettingsActivity {
-	public AndroidDriver<?> driver;
-
-	@BeforeClass
-	public void beforeClass() {
-		System.out.println(ReadXml.getElementById("基础设置", "高级"));
-		driver = new InitializeAppium().initializeAppium(driver);
-
-	}
-
-	@AfterClass
-	public void afterClass() {
-		driver.quit();
-	}
+public class TestSettingsActivity extends TestBaseSetting {
 
 	@Test(description="点高级按钮")
 	public void testAdvanced() {
 		Reporter.log("步骤1：点高级按钮");		
 		new PageSettingsActivity(driver).clickAdvanced();
-		//Assert.assertTrue(driver.findElementByName("高级设置").isDisplayed());//有“高级设置”标题
-		Screenshot.snapshot(driver, "高级设置列表.png");
+		Assert.assertEquals(driver.findElementById(ReadXml.getElementById("高级设置", "基础")).getText(),"基础");//有“基础”标题
 		Reporter.log("步骤2：返回基础设置列表");
-		driver.pressKey(new KeyEvent(AndroidKey.BACK));//返回键
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	}
 	
-	@Test(description="点关于设备")
+	@Test(description="点关于设备",invocationCount=1,threadPoolSize=1)
 	public void testAboutDevice() {
 		Reporter.log("步骤1：点关于设备");
 		new PageSettingsActivity(driver).clickAboutDevice();
 		Assert.assertTrue(driver.findElementById("com.opnext.setting:id/actionbar_title").isDisplayed());//有“设备信息”标题
-		//driver.hideKeyboard();
 		Reporter.log("步骤2：返回基础设置列表");
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	}
@@ -112,7 +94,9 @@ public class TestSettingsActivity {
 	
 	@Test(description="点设备规则")
 	public void testDeviceRules() {
-		SwipeScreen.swipeScreen(driver, "up",230);//向上滑动屏幕230
+		Wait.sleep(4000);
+		SwipeScreen.swipeScreen(driver, "up",235);//向上滑动屏幕235
+		Wait.sleep(4000);
 		Reporter.log("步骤1：点设备规则");
 		new PageSettingsActivity(driver).clickDeviceRules();
 		Assert.assertTrue(driver.findElementByName("设备规则").isDisplayed());//有“设备规则”标签
@@ -167,7 +151,9 @@ public class TestSettingsActivity {
 	
 	@Test(description="点还原全部设置")
 	public void testResetSettings() {
-		SwipeScreen.swipeScreen(driver, "up",230);//向上滑动屏幕230
+		Wait.sleep(4000);
+		SwipeScreen.swipeScreen(driver, "up",290);//向上滑动屏幕290
+		Wait.sleep(4000);
 		Reporter.log("步骤1：点还原全部设置");
 		new PageSettingsActivity(driver).clickResetSettings();
 		Assert.assertTrue(driver.findElementById("com.opnext.setting:id/dialog_hint").isDisplayed());//有“还原全部设置”的提示语
@@ -181,7 +167,7 @@ public class TestSettingsActivity {
 		new PageSettingsActivity(driver).clickExportFile();
 		Assert.assertTrue(driver.findElementByName("设置文件导出").isDisplayed());//有“导出终端设置到U盘”标签
 		Reporter.log("步骤2：返回基础设置列表");
-		driver.pressKey(new KeyEvent(AndroidKey.BACK));		
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));	
 	}
 	
 	@Test(description="点开门")
@@ -208,18 +194,17 @@ public class TestSettingsActivity {
 	public void testSystemUpdate() {
 		Reporter.log("步骤1：点系统升级");
 		new PageSettingsActivity(driver).clickSystemUpdate();
-		//Assert.assertTrue(driver.findElementById("com.opnext.setting:id/btn_app_update").isDisplayed());//单机版，有“进入升级”标签	
 		Assert.assertTrue(driver.findElementById("com.opnext.setting:id/rl_current_version").isDisplayed());//网络版，有“当前版本”标签
 		Reporter.log("步骤2：返回基础设置列表");
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));		
 	}
 	
-	@Test(description="点设备管理员",invocationCount=3,threadPoolSize=1)
+	@Test(description="点设备管理员",invocationCount=1,threadPoolSize=1)
 	public void testDeviceManager() {
 		Reporter.log("步骤1：点设备管理员");
 		new PageSettingsActivity(driver).clickDeviceManager();
-		//Assert.assertTrue(driver.findElementById("com.opnext.setting:id/actionbar_rightImg").isDisplayed());//单机版，有“新增管理员的按钮”标签
-		Assert.assertTrue(driver.findElementByName("头像").isDisplayed());//有“头像”标签
+		Wait.sleep(2000);
+		Assert.assertTrue(driver.findElementByName("姓名").isDisplayed());//有“姓名”标签
 		Reporter.log("步骤2：返回基础设置列表");
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));		
 	}

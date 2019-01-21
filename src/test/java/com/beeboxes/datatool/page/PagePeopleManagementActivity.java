@@ -1,25 +1,24 @@
 package com.beeboxes.datatool.page;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
+
+import com.beeboxes.util.PageBase;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 /**
  * Description: DataTool应用-人员管理页面-元素
  * @author dengbin
  * @date 2018年11月06日
  */
-public class PagePeopleManagementActivity {
-    public AndroidDriver<?> driver;
-	public PagePeopleManagementActivity(AndroidDriver<?> driver) {
-		this.driver = driver;
-		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-	}//定义构造函数，初始化PageFactory
+public class PagePeopleManagementActivity extends PageBase  {
 	
+	public PagePeopleManagementActivity(AndroidDriver<?> driver) {
+		super(driver);
+	}
+
 	@AndroidFindBy(id="com.opnext.datatool:id/add_person")
 	AndroidElement rl_single_add_people;//"添加人员"
 	@AndroidFindBy(id="com.opnext.datatool:id/add_people")

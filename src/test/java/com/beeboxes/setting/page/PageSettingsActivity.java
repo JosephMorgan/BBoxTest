@@ -1,13 +1,12 @@
 package com.beeboxes.setting.page;
 
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.By;
 
-import com.beeboxes.base.GestureOperation;
+import com.beeboxes.util.PageBase;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 /**
  * Description: Setting应用的基础设置列表的元素
@@ -15,19 +14,18 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
  * @author dengbin
  * @date 2018年6月28日
  */
-public class PageSettingsActivity {
-	public AndroidDriver<?> driver;
-	public PageSettingsActivity(AndroidDriver<?> driver) {
-		
-		this.driver = driver;
-		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-	}// 定义构造函数，初始化PageFactory
+public class PageSettingsActivity extends PageBase {
 	
-	//WebElement tv_advanced = driver.findElementById(ReadXml.getElementById("基础设置", "高级"));
+	public PageSettingsActivity(AndroidDriver<?> driver) {
+		super(driver);
+	}
+
 	@AndroidFindBy(id = "com.opnext.setting:id/actionbar_advanced")
 	AndroidElement tv_advanced;// "高级""
-	@AndroidFindBy(id = "com.opnext.setting:id/tv_about_device")
-	AndroidElement tv_about_device;// "关于设备"
+	By addAdministratorBtn1 = By.name("高级");
+	@AndroidFindBy(id = "com.opnext.setting:id/about_device")
+	By addAdministratorBtn = By.name("关于设备");
+	AndroidElement tv_about_device;// "关于设备"com.opnext.setting:id/about_device com.opnext.setting:id/tv_about_device
 	@AndroidFindBy(id = "com.opnext.setting:id/tv_memory_usage")
 	AndroidElement tv_storage_usage;// "使用容量"
 	@AndroidFindBy(id = "com.opnext.setting:id/tv_statistics_today")
@@ -68,15 +66,12 @@ public class PageSettingsActivity {
 
 
 	public void clickAdvanced() {
-		//new TouchAction<>(driver).tap(PointOption.point((driver.manage().window().getSize().width) / 2, 0)).perform();
-		//driver.findElementById(ReadXml.getElementById("基础设置", "高级")).click();
-		GestureOperation.tapScreen(driver);
 		tv_advanced.click();
+		//new WebDriverWait(driver, 60,1).until(ExpectedConditions.visibilityOfElementLocated(addAdministratorBtn1)).click();
 		
 	}
-
+	/** 点关于设备 */
 	public void clickAboutDevice() {
-		GestureOperation.tapScreen(driver);
 		tv_about_device.click();
 	}
 

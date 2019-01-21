@@ -1,11 +1,10 @@
 package com.beeboxes.setting.page;
 
-import org.openqa.selenium.support.PageFactory;
+import com.beeboxes.util.PageBase;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 /**
  * Description: Setting应用的高级设置列表的元素
@@ -13,9 +12,12 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
  * @date 2018年7月5日
  */
 
-public class PageAdvancedSettingActivity {
-	public AndroidDriver<?> driver;
+public class PageAdvancedSettingActivity extends PageBase {
 	
+	public PageAdvancedSettingActivity(AndroidDriver<?> driver) {
+		super(driver);
+	}
+
 	@AndroidFindBy(id="com.opnext.setting:id/Universal_settings")
 	AndroidElement ll_camera_effect_setting;//"摄像头效果设置"
 	@AndroidFindBy(id="com.opnext.setting:id/recognition_record")
@@ -27,12 +29,7 @@ public class PageAdvancedSettingActivity {
 	@AndroidFindBy(id="com.opnext.setting:id/standby_setting")
 	AndroidElement ll_standby_setting;//"待机页面设置"
 	@AndroidFindBy(id="com.opnext.setting:id/blacklist")
-	AndroidElement ll_blacklist_setting;//"黑名单设置"
-	
-	public PageAdvancedSettingActivity(AndroidDriver<?> driver) {
-		this.driver = driver;
-		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
-	}
+	AndroidElement ll_blacklist_setting;//"黑名单设置"	
 	
 	public void clickCameraEffectSetting() {
 		ll_camera_effect_setting.click();

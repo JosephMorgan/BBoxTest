@@ -5,5 +5,8 @@
 @title 执行appium脚本 
 
 @echo ------------------------------------AppiumTest----------------------- >>E:\0log\appium执行%time1%.txt
-@adb shell ime set io.appium.android.ime/.UnicodeIME
 @call mvn test >>E:\0log\appium执行%time1%.txt
+::cd SaaS的目录pom1(下发管理员、人员)
+::call mvn test
+::cd 终端的目录pom2（检查管理员、人员管理人员）
+::call mvn test

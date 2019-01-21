@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="蜂盒科技终端自动化测试-DataTool应用 ">
+	<test name="人员管理搜索人员" preserve-order="true">
+		<classes>
+			<class name="com.beeboxes.datatool.testcase.TestSearchPeople">
+				<methods>
+					<include name="testSearchPeopleByCompleteName" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.beeboxes.util.DotTestListener" />
+	</listeners>
+</suite>
