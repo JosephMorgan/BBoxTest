@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="10.107">
+           time="13.160">
   <properties />
   
   
-            <testcase name="testDeviceName" time="10.107" classname="com.beeboxes.setting.testcase.TestDeviceInfoActivity" />
+            <testcase name="testDeviceName" time="13.160" classname="com.beeboxes.setting.testcase.TestDeviceInfoActivity" />
       
 </testsuite>

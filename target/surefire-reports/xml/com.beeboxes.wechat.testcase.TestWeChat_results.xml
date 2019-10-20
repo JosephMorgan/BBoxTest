@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="蜂盒科技微信公众号"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="21.873">
+  <properties />
+  
+  
+            <testcase name="testNanjingFoodStalls" time="21.873" classname="com.beeboxes.wechat.testcase.TestWeChat" />
+      
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="蜂盒科技终端自动化测试-微信应用 ">
+	<test name="蜂盒科技微信公众号" preserve-order="true">
+		<classes>
+			<class name="com.beeboxes.wechat.testcase.TestWeChat">
+				<methods>
+					<include name="testNanjingFoodStalls" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.beeboxes.util.DotTestListener" />
+	</listeners>
+</suite>

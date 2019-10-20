@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="蜂盒科技终端自动化测试-Settings应用">
-	<test name="基础设置列表" preserve-order="true">
+<!-- 	<test name="基础设置列表" preserve-order="true">
 		<classes>
 			<class name="com.beeboxes.setting.testcase.TestSettingsActivity">
 				<methods>
@@ -41,14 +41,14 @@
 					<include name="testStandbySetting" />
 				</methods>
 			</class>
-		</classes>
-	</test>
+		</classes> 
+	</test> -->
 	<test name="关于设备" preserve-order="true">
 		<classes>
 			<class name="com.beeboxes.setting.testcase.TestDeviceInfoActivity">
 				<methods>
 					<include name="testDeviceName" />
-<!-- 					<include name="testImportLicense" /> -->
+					<!-- <include name="testImportLicense" /> -->
 				</methods>
 			</class>
 		</classes>

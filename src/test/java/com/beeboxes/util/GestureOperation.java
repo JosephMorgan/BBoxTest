@@ -1,7 +1,10 @@
 package com.beeboxes.util;
 
+import java.time.Duration;
+
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
 /**
@@ -26,6 +29,12 @@ public class GestureOperation {
 	/**点击屏幕的坐标（400,0）*/
 	public static void tapScreen(AndroidDriver<?> driver) {
 		new TouchAction<>(driver).tap(PointOption.point(400, 0)).perform();
+	}
+	
+	/**拖动元素从(x1,y1)到(x2,y2),duration单位秒**/
+	public static void drag(AndroidDriver<?> driver,int x1, int y1, int x2, int y2,long duration) {
+		Duration duration1=Duration.ofSeconds(duration);
+		new TouchAction<>(driver).press(PointOption.point(x1,y1)).waitAction(WaitOptions.waitOptions(duration1)).moveTo(PointOption.point(x2, y2)).release().perform();
 	}
 
 }

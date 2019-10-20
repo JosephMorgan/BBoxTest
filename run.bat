@@ -4,9 +4,17 @@
 
 @title 执行appium脚本 
 
-@echo ------------------------------------AppiumTest----------------------- >>E:\0log\appium执行%time1%.txt
-@call mvn test >>E:\0log\appium执行%time1%.txt
+:loop
+set logPath="C:\Users\Administrator\Desktop\appiumlog\appium执行%time1%.txt"
+echo %logPath%
+set /a num += 1
+@echo ---------------------第%num%次---AppiumTest----------------------- >>%logPath%
+@call mvn test >>%logPath%
 ::cd SaaS的目录pom1(下发管理员、人员)
 ::call mvn test
 ::cd 终端的目录pom2（检查管理员、人员管理人员）
 ::call mvn test
+
+::pause
+
+goto loop

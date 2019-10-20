@@ -21,8 +21,8 @@ public class TestBaseSetting {
 	@BeforeClass
 	public void beforeClass() {
 		driver = new InitializeAppiumSetting().initializeAppium(driver);
-		Wait.sleep(5000);
-		SwipeScreen.swipeScreen(driver, "left",200);
+		//Wait.sleep(5000);
+		//SwipeScreen.swipeScreen(driver, "left",200);
 	}
 
 	@AfterClass

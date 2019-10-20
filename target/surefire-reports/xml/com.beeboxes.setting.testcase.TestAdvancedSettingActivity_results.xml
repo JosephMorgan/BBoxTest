@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="9.399">
+           time="8.452">
   <properties />
   
   
-            <testcase name="testStandbySetting" time="1.796" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
-                <testcase name="testAdvanced" time="2.626" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
-                <testcase name="testCameraEffectSetting" time="1.455" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
-                <testcase name="testTipsCustomSetting" time="1.715" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
-                <testcase name="testRecognitionRecordSetting" time="1.807" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+            <testcase name="testAdvanced" time="2.475" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testCameraEffectSetting" time="1.298" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testTipsCustomSetting" time="1.551" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testRecognitionRecordSetting" time="1.545" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
+                <testcase name="testStandbySetting" time="1.583" classname="com.beeboxes.setting.testcase.TestAdvancedSettingActivity" />
       
 </testsuite>

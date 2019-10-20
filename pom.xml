@@ -40,7 +40,7 @@
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>LATEST</version>
+			<version>[1.0.0,)</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.seleniumhq.selenium</groupId>
@@ -62,7 +62,7 @@
 		<dependency>
 			<groupId>com.saucelabs</groupId>
 			<artifactId>sauce_junit</artifactId>
-			<version>LATEST</version>
+			<version>2.1.25</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -121,9 +121,11 @@
 				<configuration>
 					<suiteXmlFiles>
 					    <!--可以添加多个xml文件-->
-						<suiteXmlFile>xmlfile/testngSetupWizard.xml</suiteXmlFile>
-						<suiteXmlFile>xmlfile/testngSetting.xml</suiteXmlFile>
-						<suiteXmlFile>xmlfile/testngDataTool.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>xmlfile/testngSetupWizard.xml</suiteXmlFile> -->
+						<!-- <suiteXmlFile>xmlfile/testngSetting.xml</suiteXmlFile> -->
+						<!-- <suiteXmlFile>xmlfile/testngDataTool.xml</suiteXmlFile> -->
+						<!-- <suiteXmlFile>xmlfile/testngFace.xml</suiteXmlFile> -->
+						<suiteXmlFile>xmlfile/testngWeChat.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<properties>
 						<property>
